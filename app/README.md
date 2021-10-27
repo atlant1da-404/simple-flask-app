@@ -2,8 +2,6 @@ Hello!
 
 Steps to run this project!
 
-1) Create virtual enviroment (env) 
-2) Activate virtual enviroment (env)
-3) Install pip -r requirements.txt
-4) (env) flask run
-5) GOOD LUCK!
+1) Install Docker. 
+2) docker-compose up
+3) GOOD LUCK!
