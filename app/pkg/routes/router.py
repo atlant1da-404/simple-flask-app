@@ -37,7 +37,8 @@ data = dict()
 def user_account_login():
     """Аутентифікація і авторизація користувача"""
     data = request.get_json()
-    return 'Login'
+    get_user_from_db(data)
+    return dict({"response": "Good"})
 
 
 @app.route("/registration", methods=['GET', 'POST'])
@@ -49,5 +50,5 @@ def user_accout_registration():
 
 
 def init_routers():
-    """Функция инициализации остальных методов маршрутизации"""
+    """Функция стартер остальных методов маршрутизации =)"""
     homepage()
